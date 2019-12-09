@@ -11,3 +11,10 @@
 /build
 /captures
 .externalNativeBuild
+.idea
+/app/app.iml
+gradle
+gradlew
+/jjdxm-ijkplayer/build
+/FFmpegAndroid/build
+gradlew.bat
