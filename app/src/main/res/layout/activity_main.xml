@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/test_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <com.learn.growthsystemdemo.view.MyQuadView
+        android:id="@+id/test_quadView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/test_recycleview" />
+
+    <HorizontalScrollView
+        android:id="@+id/test_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_quadView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="1030dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/timg" />
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/test_svga"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="400dp"
+                app:autoPlay="true"
+                app:source="run.svga" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+</LinearLayout>

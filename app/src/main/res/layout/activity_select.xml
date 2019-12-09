@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SelectActivity">
+
+    <Button
+        android:id="@+id/select_recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectBtn"
+        android:text="recycle缩放滚动" />
+
+    <Button
+        android:id="@+id/select_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectBtn"
+        android:text="pagerview" />
+
+    <Button
+        android:id="@+id/select_brokenline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectBtn"
+        android:text="折线图" />
+
+    <Button
+        android:id="@+id/select_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectBtn"
+        android:text="柱状图" />
+
+</LinearLayout>

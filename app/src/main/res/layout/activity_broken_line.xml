@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BrokenLineActivity">
+
+    <com.learn.growthsystemdemo.view.BrokenLineView
+        android:id="@+id/brokenline_view"
+        android:layout_width="330dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true" />
+
+    <com.learn.growthsystemdemo.view.BrokenLineVerticalView
+        android:id="@+id/brokenline_vertical_view"
+        android:layout_width="30dp"
+        android:layout_height="210dp"
+        android:layout_alignTop="@id/brokenline_view"
+        android:layout_toLeftOf="@id/brokenline_view" />
+
+
+</RelativeLayout>
